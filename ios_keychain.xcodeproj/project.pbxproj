@@ -13,6 +13,8 @@
 		CE191D4B2C71F47900920270 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE191D492C71F47900920270 /* Main.storyboard */; };
 		CE191D4D2C71F47A00920270 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE191D4C2C71F47A00920270 /* Assets.xcassets */; };
 		CE191D502C71F47A00920270 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE191D4E2C71F47A00920270 /* LaunchScreen.storyboard */; };
+		CE191D592C71F49B00920270 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE191D582C71F49B00920270 /* Security.framework */; };
+		CE191D5B2C73107A00920270 /* DBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE191D5A2C73107A00920270 /* DBHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		CE191D4C2C71F47A00920270 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE191D4F2C71F47A00920270 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE191D512C71F47A00920270 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE191D582C71F49B00920270 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		CE191D5A2C73107A00920270 /* DBHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE191D592C71F49B00920270 /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,7 @@
 			children = (
 				CE191D422C71F47900920270 /* ios_keychain */,
 				CE191D412C71F47900920270 /* Products */,
+				CE191D572C71F49B00920270 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +69,17 @@
 				CE191D4C2C71F47A00920270 /* Assets.xcassets */,
 				CE191D4E2C71F47A00920270 /* LaunchScreen.storyboard */,
 				CE191D512C71F47A00920270 /* Info.plist */,
+				CE191D5A2C73107A00920270 /* DBHelper.swift */,
 			);
 			path = ios_keychain;
+			sourceTree = "<group>";
+		};
+		CE191D572C71F49B00920270 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE191D582C71F49B00920270 /* Security.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +156,7 @@
 				CE191D482C71F47900920270 /* ViewController.swift in Sources */,
 				CE191D442C71F47900920270 /* AppDelegate.swift in Sources */,
 				CE191D462C71F47900920270 /* SceneDelegate.swift in Sources */,
+				CE191D5B2C73107A00920270 /* DBHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
